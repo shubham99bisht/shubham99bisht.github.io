@@ -26,6 +26,9 @@
 
   <!-- Swal alert -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- GitHubCalendar -->
+  <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
 </head>
 
 <body>
@@ -61,14 +64,14 @@
         <a href="http://linkedin.com/in/shubham99bisht" class="linkedin"  target="_blank"><i class="bx bxl-linkedin"></i></a>
         <a href="http://github.com/shubham99bisht" class="linkedin"  target="_blank"><i class="bx bxl-github"></i></a>
       </div>
-      <button class="btn btn-info" style="margin-top:20px">Contact me!</button>
+      <a class="btn btn-info" style="margin-top:20px" href="#contact">Leave a Message</a>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="margin-bottom:-80px">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -130,6 +133,16 @@
         </div>
 
       </div>
+
+      <!-- Github calendar. -->
+      <div class="calendar" id="githubcalendar">
+          <!-- Loading stuff -->
+          Loading Contributor chart from Github @ shubham99bisht
+      </div>
+      <script>
+          new GitHubCalendar(".calendar", "shubham99bisht");
+      </script>
+
     </section><!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
@@ -291,8 +304,7 @@
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
-
-      <div class="container" data-aos="fade-up" id="portfolio_div">
+      <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Portfolio</h2>
@@ -303,60 +315,101 @@
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">ML/DL</li>
-              <li data-filter=".filter-card">Graphic Designs</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-ml">Deep Learning</li>
+              <li data-filter=".filter-web">Web Designs</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/iblink.gif" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
+                <h4>iBlink</h4>
+                <p>An Application to help you remind to blink and protect your eyes!</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/iblink.gif" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://github.com/shubham99bisht/iblink" target="_blank"><i class="bx bxl-github bx-tada"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/skillconnect.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
+                <h4>SkillConnect</h4>
+                <p>Company Website</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/skillconnect.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://skillconnect.github.io" target="_blank"><i class="bx bx-link-external bx-tada"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/no_helmet.png" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
+                <h4>No Helmet</h4>
+                <p>App</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/no_helmet.png" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-zoom-in"></i></a>
+                  <a href="portfolio/nohelmet.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="No Helmet Rider Detection"><i class="bx bx-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/dino.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Python Dino</h4>
+                <p>Using python to play T-rex chrome offline game</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/dino.png" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-zoom-in"></i></a>
+                  <a href="https://github.com/shubham99bisht/Python-plays-Dino" target="_blank"><i class="bx bxl-github bx-tada"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/rutuja.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Rutuja Deorey</h4>
+                <p>Personal Blogging Website</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/rutuja.png" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-zoom-in"></i></a>
+                  <a href="portfolio/rutuja.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Rutuja Deorey - Personal Blogging Website"><i class="bx bx-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/technohacks.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>TechnoHacks</h4>
+                <p>Company Website</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/technohacks.png" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-zoom-in"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
         </div>
-
       </div>
+
+      <div style="text-align:center; display:none"><button class="btn btn-primary">See Entire Portfolio <i class="bx bx-link-external"></i></button></div>
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Services Section ======= -->
@@ -479,6 +532,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
+          <p class="font-italic">Let me know your idea and get a Quote.</p>
         </div>
 
         <div class="row mt-1">
@@ -540,9 +594,6 @@
                     });
                 }
             </script>
-
-
-
           </div>
 
         </div>
@@ -586,5 +637,4 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 </body>
-
 </html>
